@@ -1,4 +1,4 @@
-# es6
+# ES6
 description of ES6 Features
 
 ##let

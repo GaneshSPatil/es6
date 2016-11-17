@@ -10,7 +10,7 @@ var variableScoping = function() {
 
   console.log(insideFnX);  //prints 'inside function var X'
   console.log(varX);  //prints 'inside scope var X'
-  console.log(letX);  //throws error
+  console.log(letX);  //ReferenceError: letX is not defined
 };
 
 variableScoping();
