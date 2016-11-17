@@ -30,6 +30,7 @@ In above example,
 Variable `varX` defined using `var` is accessible within the function `variableScoping`, as its scope is limited within the function.
 Variable `letX` defined using `let` is accessible only within the block, as its scope is limited the inner block.
 
+----
 
 ##const
 `const` is used to define scoped constant variables.
@@ -42,3 +43,19 @@ finalX = 50;  //TypeError: Assignment to constant variable.
 ```
 In above example,
 value of `finalX` can not be changed, as it is a final variable.
+
+Note: `const` only makes the variable reference immutable, but, the content of the variable can be modified.
+
+```
+const numbers = [1, 2, 3];
+
+numbers.push(4);  //pushes 4 in the `numbers` array
+
+numbers = [10, 20, 30];  //TypeError: Assignment to constant variable.
+```
+
+In above example,
+contents of the `numbers` array can be modified, such as, new elements can be added, modified or deleted.
+But, the reference of the `numbers` variable can not be changed.
+
+---
