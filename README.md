@@ -29,3 +29,16 @@ In above example,
 `insideFnX` variable is accessible from anywhere within the function `variableScoping`.
 Variable `varX` defined using `var` is accessible within the function `variableScoping`, as its scope is limited within the function.
 Variable `letX` defined using `let` is accessible only within the block, as its scope is limited the inner block.
+
+
+##const
+`const` is used to define scoped constant variables.
+The value of a constant cannot change through re-assignment, and it can't be redeclared.
+It is accessible only within the defined scope.
+
+```
+const finalX = 20;
+finalX = 50;  //TypeError: Assignment to constant variable.
+```
+In above example,
+value of `finalX` can not be changed, as it is a final variable.
